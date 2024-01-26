@@ -1,0 +1,73 @@
+*
+{
+	margin:0px;
+	padding:0px;
+	background-size:cover;
+    box-sizing: border-box;
+}
+/***************************************************************** menu style *************************************************************/
+	/*logo-start*/
+	.logo
+		{
+			float:left;
+			padding:5px;
+			width:30%;
+		}
+	/*logo-end*/	
+.menuitem
+{
+	text-align:right;
+	background-color:#e6e6e6;
+	position:fixed;
+	width:100%;
+	z-index:1;
+}
+
+.menuitem ul li a
+{
+	color:black;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.menuitem ul li
+{
+	list-style:none;
+	display:inline-block;
+	padding:20px;
+	font-size:175%;
+	font-family:sans-serif;	
+}
+
+.menuitem ul li a:hover
+{
+	border-bottom: 3px solid orange;
+	color:orange;
+}
+.toggle
+{
+    float: right;
+    z-index: 1;
+    display: none;
+    width: 10%;
+    padding:5px;
+}
+/***************************************************************** responsive menu style *************************************************************/
+@media(max-width:915px)
+{
+    .uli
+    {
+        display:none;
+    }
+    .toggle
+    {
+        display: inherit;
+    }
+     .menuitem:hover.menuitem .uli
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        float: none;
+    } 
+}
